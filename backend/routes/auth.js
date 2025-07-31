@@ -5,9 +5,6 @@ const { protect } = require('../middleware/auth');
 
 const router = express.Router();
 
-// @desc    Register user
-// @route   POST /api/auth/register
-// @access  Public
 router.post('/register', [
   body('name')
     .trim()
@@ -70,9 +67,6 @@ router.post('/register', [
   }
 });
 
-// @desc    Login user
-// @route   POST /api/auth/login
-// @access  Public
 router.post('/login', [
   body('email')
     .isEmail()
@@ -133,9 +127,6 @@ router.post('/login', [
   }
 });
 
-// @desc    Get current logged in user
-// @route   GET /api/auth/me
-// @access  Private
 router.get('/me', protect, async (req, res) => {
   try {
     const user = await User.findById(req.user.id);
