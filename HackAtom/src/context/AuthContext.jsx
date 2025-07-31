@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   // Set axios default base URL
-  axios.defaults.baseURL = 'http://localhost:5010/api';
+  axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL + '/api';
 
   // Check if user is logged in on app load
   useEffect(() => {
