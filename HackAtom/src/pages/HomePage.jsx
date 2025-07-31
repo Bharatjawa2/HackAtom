@@ -729,7 +729,7 @@ const HomePage = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-start overflow-visible">
             <div className="space-y-4">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -752,14 +752,7 @@ const HomePage = () => {
                 </div>
               </motion.div>
             </div>
-            <div className="flex items-center space-x-4">
-              <button
-                onClick={toggleTheme}
-                className="p-3 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50 border border-white/20"
-                aria-label={text[language].themeToggle}
-              >
-                {theme === 'light' ? <Moon className="w-6 h-6" /> : <Sun className="w-6 h-6" />}
-              </button>
+            <div className="flex items-start space-x-4 overflow-visible">
               <UserProfile />
             </div>
           </div>

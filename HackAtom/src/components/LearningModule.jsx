@@ -556,7 +556,7 @@ const LearningModule = ({ section, onBack, language }) => {
                 <div className="flex justify-between">
                   <button
                     onClick={() => setShowQuiz(false)}
-                    className="px-8 py-3 bg-gradient-to-r from-red-400 to-red-600 text-white rounded-2xl hover:from-red-500 hover:to-red-700 transform hover:scale-105 transition-all duration-300 font-bold text-lg focus:outline-none focus:ring-4 focus:ring-red-300"
+                    className="px-8 py-3 bg-gradient-to-r from-red-400 to-red-600 text-black rounded-2xl hover:from-red-500 hover:to-red-700 transform hover:scale-105 transition-all duration-300 font-bold text-lg focus:outline-none focus:ring-4 focus:ring-red-300"
                     aria-label={text[language].backToModule}
                   >
                     🏠 {text[language].backToModule}
@@ -636,7 +636,7 @@ const LearningModule = ({ section, onBack, language }) => {
             <div className="flex items-center space-x-4">
               <button
                 onClick={onBack}
-                className="flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+                className="flex items-center px-4 py-2 bg-black bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
                 aria-label={text[language].back}
               >
                 <ArrowLeft className="w-5 h-5 mr-2" />
@@ -652,28 +652,28 @@ const LearningModule = ({ section, onBack, language }) => {
             <div className="flex items-center space-x-2">
               <button
                 onClick={toggleAudio}
-                className="p-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+                className="p-2 rounded-lg bg-black bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
                 aria-label={text[language].audioToggle}
               >
                 {isAudioPlaying ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
               </button>
               <button
                 onClick={toggleFullscreen}
-                className="p-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+                className="p-2 rounded-lg bg-black bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
                 aria-label={text[language].fullscreen}
               >
                 {isFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
               </button>
               <button
                 onClick={toggleHighContrast}
-                className="p-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+                className="p-2 rounded-lg bg-black bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
                 aria-label={text[language].highContrast}
               >
                 {highContrast ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
               </button>
               <button
                 onClick={toggleKeyboardMode}
-                className="p-2 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+                className="p-2 rounded-lg bg-black bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
                 aria-label={text[language].keyboardMode}
               >
                 {keyboardMode ? <MousePointer className="w-5 h-5" /> : <Keyboard className="w-5 h-5" />}
@@ -710,9 +710,9 @@ const LearningModule = ({ section, onBack, language }) => {
                 key={step.id}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
                   index === currentStep
-                    ? 'bg-[currentModule.color] text-white'
+                    ? 'bg-[currentModule.color] text-red-300'
                     : stepProgress.has(index)
-                    ? 'bg-green-100 text-green-800'
+                    ? 'bg-green-400 text-green-800'
                     : 'bg-white text-gray-500'
                 }`}
               >
@@ -813,7 +813,7 @@ const LearningModule = ({ section, onBack, language }) => {
 
                 <button
                   onClick={currentStep === currentModule.steps.length - 1 ? () => setShowQuiz(true) : handleNextStep}
-                  className="flex items-center px-6 py-2 bg-[currentModule.color] text-white rounded-lg hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-4 focus:ring-[currentModule.color] focus:ring-opacity-50"
+                  className="flex items-center px-6 py-2 bg-[currentModule.color] text-black rounded-lg hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-4 focus:ring-[currentModule.color] focus:ring-opacity-50"
                   aria-label={currentStep === currentModule.steps.length - 1 ? text[language].quiz : text[language].next}
                 >
                   {currentStep === currentModule.steps.length - 1 ? (
