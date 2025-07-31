@@ -1,190 +1,205 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Info, X, Play, Pause, RotateCcw } from 'lucide-react';
+import { 
+  Play, 
+  Pause, 
+  RotateCcw, 
+  X, 
+  Sparkles,
+  Star,
+  Heart,
+  Zap
+} from 'lucide-react';
 
 const InteractiveAtom3D = () => {
   const { language } = useLanguage();
   const [isRotating, setIsRotating] = useState(true);
   const [selectedParticle, setSelectedParticle] = useState(null);
-  const [showInfo, setShowInfo] = useState(false);
+  const [showSparkles, setShowSparkles] = useState(false);
 
   const particleInfo = {
-    EN: {
-      neutron: {
+    neutron: {
+      EN: {
         name: "Neutron",
-        charge: "Neutral (0)",
-        mass: "1.675 × 10⁻²⁷ kg",
-        location: "Nucleus",
-        function: "Stabilizes the nucleus and participates in nuclear reactions",
-        facts: [
-          "No electric charge",
-          "Helps prevent protons from repelling each other",
-          "Essential for nuclear fission and fusion",
-          "Can be used as a probe in neutron scattering experiments"
-        ]
+        emoji: "🤝",
+        color: "from-blue-400 to-blue-600",
+        description: "I'm a neutron! I have no electric charge, which makes me very friendly and helps me keep the nucleus stable.",
+        funFacts: [
+          "I'm like a peacemaker in the atom!",
+          "I help prevent protons from fighting each other",
+          "I'm found in the nucleus with protons",
+          "I'm about the same size as a proton"
+        ],
+        personality: "I'm very friendly and love helping others!"
       },
-      proton: {
-        name: "Proton",
-        charge: "Positive (+1)",
-        mass: "1.673 × 10⁻²⁷ kg",
-        location: "Nucleus",
-        function: "Determines the element's identity and atomic number",
-        facts: [
-          "Positively charged particle",
-          "Number of protons defines the element",
-          "Participates in nuclear reactions",
-          "Has a half-life of over 10³⁴ years"
-        ]
-      },
-      electron: {
-        name: "Electron",
-        charge: "Negative (-1)",
-        mass: "9.109 × 10⁻³¹ kg",
-        location: "Electron cloud",
-        function: "Determines chemical properties and bonding",
-        facts: [
-          "Negatively charged particle",
-          "Orbits the nucleus in energy levels",
-          "Participates in chemical reactions",
-          "Can be shared between atoms (covalent bonding)"
-        ]
-      },
-      nucleus: {
-        name: "Nucleus",
-        charge: "Positive (varies)",
-        mass: "Most of atom's mass",
-        location: "Center of atom",
-        function: "Contains protons and neutrons, site of nuclear reactions",
-        facts: [
-          "Contains 99.9% of atom's mass",
-          "Site of nuclear fission and fusion",
-          "Held together by strong nuclear force",
-          "Can be unstable (radioactive decay)"
-        ]
+      RU: {
+        name: "Нейтрон",
+        emoji: "🤝",
+        color: "from-blue-400 to-blue-600",
+        description: "Я нейтрон! У меня нет электрического заряда, что делает меня очень дружелюбным и помогает мне держать ядро стабильным.",
+        funFacts: [
+          "Я как миротворец в атоме!",
+          "Я помогаю предотвратить драки между протонами",
+          "Я нахожусь в ядре с протонами",
+          "Я примерно такого же размера, как протон"
+        ],
+        personality: "Я очень дружелюбный и люблю помогать другим!"
       }
     },
-    RU: {
-      neutron: {
-        name: "Нейтрон",
-        charge: "Нейтральный (0)",
-        mass: "1,675 × 10⁻²⁷ кг",
-        location: "Ядро",
-        function: "Стабилизирует ядро и участвует в ядерных реакциях",
-        facts: [
-          "Не имеет электрического заряда",
-          "Помогает предотвратить отталкивание протонов",
-          "Необходим для ядерного деления и синтеза",
-          "Может использоваться как зонд в экспериментах по рассеянию нейтронов"
-        ]
+    proton: {
+      EN: {
+        name: "Proton",
+        emoji: "👑",
+        color: "from-red-400 to-red-600",
+        description: "I'm a proton! I have a positive electric charge and I'm like the leader of the atom family.",
+        funFacts: [
+          "I'm like the king of the nucleus!",
+          "I have a positive electric charge",
+          "I help determine what element the atom is",
+          "I'm found in the nucleus"
+        ],
+        personality: "I'm confident and love being in charge!"
       },
-      proton: {
+      RU: {
         name: "Протон",
-        charge: "Положительный (+1)",
-        mass: "1,673 × 10⁻²⁷ кг",
-        location: "Ядро",
-        function: "Определяет идентичность элемента и атомный номер",
-        facts: [
-          "Положительно заряженная частица",
-          "Количество протонов определяет элемент",
-          "Участвует в ядерных реакциях",
-          "Имеет период полураспада более 10³⁴ лет"
-        ]
+        emoji: "👑",
+        color: "from-red-400 to-red-600",
+        description: "Я протон! У меня положительный электрический заряд, и я как лидер атомной семьи.",
+        funFacts: [
+          "Я как король ядра!",
+          "У меня положительный электрический заряд",
+          "Я помогаю определить, какой это элемент",
+          "Я нахожусь в ядре"
+        ],
+        personality: "Я уверен в себе и люблю быть главным!"
+      }
+    },
+    electron: {
+      EN: {
+        name: "Electron",
+        emoji: "💃",
+        color: "from-green-400 to-green-600",
+        description: "I'm an electron! I have a negative electric charge and I dance around the nucleus in special orbits.",
+        funFacts: [
+          "I'm like a tiny dancer!",
+          "I have a negative electric charge",
+          "I orbit around the nucleus",
+          "I'm much smaller than protons and neutrons"
+        ],
+        personality: "I'm energetic and love to dance around!"
       },
-      electron: {
+      RU: {
         name: "Электрон",
-        charge: "Отрицательный (-1)",
-        mass: "9,109 × 10⁻³¹ кг",
-        location: "Электронное облако",
-        function: "Определяет химические свойства и связи",
-        facts: [
-          "Отрицательно заряженная частица",
-          "Вращается вокруг ядра на энергетических уровнях",
-          "Участвует в химических реакциях",
-          "Может быть разделен между атомами (ковалентная связь)"
-        ]
+        emoji: "💃",
+        color: "from-green-400 to-green-600",
+        description: "Я электрон! У меня отрицательный электрический заряд, и я танцую вокруг ядра по специальным орбитам.",
+        funFacts: [
+          "Я как крошечный танцор!",
+          "У меня отрицательный электрический заряд",
+          "Я вращаюсь вокруг ядра",
+          "Я намного меньше протонов и нейтронов"
+        ],
+        personality: "Я энергичный и люблю танцевать вокруг!"
+      }
+    },
+    nucleus: {
+      EN: {
+        name: "Nucleus",
+        emoji: "❤️",
+        color: "from-purple-400 to-purple-600",
+        description: "I'm the nucleus! I'm like the heart of the atom where all the protons and neutrons live together.",
+        funFacts: [
+          "I'm like the heart of the atom!",
+          "I contain protons and neutrons",
+          "I'm very small but very important",
+          "I'm where nuclear reactions happen"
+        ],
+        personality: "I'm the center of attention and love being important!"
       },
-      nucleus: {
+      RU: {
         name: "Ядро",
-        charge: "Положительный (варьируется)",
-        mass: "Большая часть массы атома",
-        location: "Центр атома",
-        function: "Содержит протоны и нейтроны, место ядерных реакций",
-        facts: [
-          "Содержит 99,9% массы атома",
-          "Место ядерного деления и синтеза",
-          "Удерживается вместе сильным ядерным взаимодействием",
-          "Может быть нестабильным (радиоактивный распад)"
-        ]
+        emoji: "❤️",
+        color: "from-purple-400 to-purple-600",
+        description: "Я ядро! Я как сердце атома, где все протоны и нейтроны живут вместе.",
+        funFacts: [
+          "Я как сердце атома!",
+          "Я содержаю протоны и нейтроны",
+          "Я очень маленький, но очень важный",
+          "Я где происходят ядерные реакции"
+        ],
+        personality: "Я центр внимания и люблю быть важным!"
       }
     }
   };
 
-  const Particle = ({ type, position, color, onClick, isRotating }) => {
-    const rotationClass = isRotating ? 'animate-spin' : '';
-    
+  const Particle = ({ type, position, onClick, onMouseEnter, onMouseLeave }) => {
+    const info = particleInfo[type][language];
     return (
       <div
-        className={`absolute w-12 h-12 rounded-full ${color} flex items-center justify-center cursor-pointer transform transition-all duration-300 hover:scale-125 hover:shadow-lg ${rotationClass}`}
+        className={`absolute w-16 h-16 bg-gradient-to-br ${info.color} rounded-full cursor-pointer flex items-center justify-center text-white text-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 border-2 border-white`}
         style={position}
-        onClick={() => onClick(type)}
+        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
       >
-        <span className="text-white font-bold text-sm">{type === 'nucleus' ? 'N' : type[0].toUpperCase()}</span>
+        {info.emoji}
       </div>
     );
   };
 
   const InfoModal = ({ particle, onClose }) => {
-    const info = particleInfo[language][particle];
+    const info = particleInfo[particle][language];
     
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div className="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full mx-4 max-h-[80vh] overflow-y-auto">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-2xl font-bold text-gray-800">{info.name}</h3>
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 border border-gray-200">
+          <div className="flex justify-between items-center mb-6">
+            <div className="flex items-center">
+              <div className={`w-12 h-12 bg-gradient-to-br ${info.color} rounded-full flex items-center justify-center text-white text-xl mr-4`}>
+                {info.emoji}
+              </div>
+              <h2 className="text-2xl font-bold text-gray-800">{info.name}</h2>
+            </div>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700"
+              className="text-gray-500 hover:text-gray-700 transition-colors"
             >
               <X className="w-6 h-6" />
             </button>
           </div>
           
-          <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <span className="font-semibold text-gray-600">Charge:</span>
-                <p className="text-gray-800">{info.charge}</p>
-              </div>
-              <div>
-                <span className="font-semibold text-gray-600">Mass:</span>
-                <p className="text-gray-800">{info.mass}</p>
-              </div>
-              <div>
-                <span className="font-semibold text-gray-600">Location:</span>
-                <p className="text-gray-800">{info.location}</p>
-              </div>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">My Job</h3>
+              <p className="text-gray-700 leading-relaxed">{info.description}</p>
             </div>
             
             <div>
-              <span className="font-semibold text-gray-600">Function:</span>
-              <p className="text-gray-800 mt-1">{info.function}</p>
-            </div>
-            
-            <div>
-              <span className="font-semibold text-gray-600">Key Facts:</span>
-              <ul className="list-disc list-inside text-gray-800 mt-2 space-y-1">
-                {info.facts.map((fact, index) => (
-                  <li key={index} className="text-sm">{fact}</li>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Fun Facts About Me</h3>
+              <ul className="space-y-2">
+                {info.funFacts.map((fact, index) => (
+                  <li key={index} className="flex items-start">
+                    <Star className="w-4 h-4 text-yellow-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">{fact}</span>
+                  </li>
                 ))}
               </ul>
+            </div>
+            
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-4 border border-blue-200">
+              <div className="flex items-center mb-2">
+                <Heart className="w-5 h-5 text-pink-500 mr-2" />
+                <span className="font-semibold text-gray-800">My Personality</span>
+              </div>
+              <p className="text-gray-700">{info.personality}</p>
             </div>
           </div>
           
           <button
             onClick={onClose}
-            className="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+            className="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
           >
-            Close
+            Got it!
           </button>
         </div>
       </div>
@@ -193,116 +208,188 @@ const InteractiveAtom3D = () => {
 
   const handleParticleClick = (particle) => {
     setSelectedParticle(particle);
-    setShowInfo(true);
+    setShowSparkles(true);
+    setTimeout(() => setShowSparkles(false), 1000);
   };
 
-  const toggleRotation = () => {
-    setIsRotating(!isRotating);
+  const handleParticleHover = () => {
+    setShowSparkles(true);
   };
 
-  const resetAtom = () => {
-    setIsRotating(true);
-    setSelectedParticle(null);
-    setShowInfo(false);
+  const handleParticleLeave = () => {
+    setShowSparkles(false);
   };
 
   return (
     <div className="relative">
-      {/* Controls */}
-      <div className="absolute top-4 left-4 z-10 flex space-x-2">
-        <button
-          onClick={toggleRotation}
-          className="bg-white bg-opacity-90 p-2 rounded-lg shadow-lg hover:bg-opacity-100 transition-all"
-          title={isRotating ? "Pause rotation" : "Start rotation"}
-        >
-          {isRotating ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-        </button>
-        <button
-          onClick={resetAtom}
-          className="bg-white bg-opacity-90 p-2 rounded-lg shadow-lg hover:bg-opacity-100 transition-all"
-          title="Reset atom"
-        >
-          <RotateCcw className="w-4 h-4" />
-        </button>
-      </div>
-
-      {/* Atom Model */}
-      <div className="relative w-64 h-64 mx-auto">
-        {/* Nucleus */}
-        <Particle
-          type="nucleus"
-          position={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-          color="bg-red-500"
-          onClick={handleParticleClick}
-          isRotating={false}
-        />
-        
-        {/* Neutrons */}
-        <Particle
-          type="neutron"
-          position={{ top: '25%', left: '25%' }}
-          color="bg-blue-500"
-          onClick={handleParticleClick}
-          isRotating={isRotating}
-        />
-        <Particle
-          type="neutron"
-          position={{ top: '25%', right: '25%' }}
-          color="bg-blue-500"
-          onClick={handleParticleClick}
-          isRotating={isRotating}
-        />
-        
-        {/* Protons */}
-        <Particle
-          type="proton"
-          position={{ bottom: '25%', left: '25%' }}
-          color="bg-red-600"
-          onClick={handleParticleClick}
-          isRotating={isRotating}
-        />
-        <Particle
-          type="proton"
-          position={{ bottom: '25%', right: '25%' }}
-          color="bg-red-600"
-          onClick={handleParticleClick}
-          isRotating={isRotating}
-        />
-        
-        {/* Electrons (orbiting) */}
-        <div className={`absolute inset-0 ${isRotating ? 'animate-spin' : ''}`} style={{ animationDuration: '4s' }}>
-          <Particle
-            type="electron"
-            position={{ top: '10%', left: '50%', transform: 'translateX(-50%)' }}
-            color="bg-green-500"
-            onClick={handleParticleClick}
-            isRotating={false}
-          />
+      {/* Sparkles effect */}
+      {showSparkles && (
+        <div className="absolute inset-0 pointer-events-none z-10">
+          {Array.from({ length: 15 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute animate-ping"
+              style={{
+                left: Math.random() * 320,
+                top: Math.random() * 320,
+                animationDelay: `${Math.random() * 1}s`
+              }}
+            >
+              ✨
+            </div>
+          ))}
         </div>
-        
-        <div className={`absolute inset-0 ${isRotating ? 'animate-spin' : ''}`} style={{ animationDuration: '6s', animationDirection: 'reverse' }}>
-          <Particle
-            type="electron"
-            position={{ bottom: '10%', left: '50%', transform: 'translateX(-50%)' }}
-            color="bg-green-500"
-            onClick={handleParticleClick}
-            isRotating={false}
-          />
-        </div>
-      </div>
+      )}
 
-      {/* Instructions */}
-      <div className="text-center mt-4">
-        <p className="text-sm text-gray-600">
-          Click on any particle to learn more about it!
-        </p>
+      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-gray-200">
+        <div className="text-center mb-6">
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">Interactive Atom Model</h3>
+          <p className="text-gray-600">Click on any particle to learn more!</p>
+        </div>
+
+        {/* Atom Model */}
+        <div className="relative w-80 h-80 mx-auto mb-8">
+          {/* Nucleus */}
+          <Particle
+            type="nucleus"
+            position={{
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}
+            onClick={() => handleParticleClick('nucleus')}
+            onMouseEnter={handleParticleHover}
+            onMouseLeave={handleParticleLeave}
+          />
+
+          {/* Protons */}
+          <Particle
+            type="proton"
+            position={{
+              top: '30%',
+              left: '30%',
+              transform: 'translate(-50%, -50%)'
+            }}
+            onClick={() => handleParticleClick('proton')}
+            onMouseEnter={handleParticleHover}
+            onMouseLeave={handleParticleLeave}
+          />
+          <Particle
+            type="proton"
+            position={{
+              top: '70%',
+              left: '70%',
+              transform: 'translate(-50%, -50%)'
+            }}
+            onClick={() => handleParticleClick('proton')}
+            onMouseEnter={handleParticleHover}
+            onMouseLeave={handleParticleLeave}
+          />
+
+          {/* Neutrons */}
+          <Particle
+            type="neutron"
+            position={{
+              top: '30%',
+              left: '70%',
+              transform: 'translate(-50%, -50%)'
+            }}
+            onClick={() => handleParticleClick('neutron')}
+            onMouseEnter={handleParticleHover}
+            onMouseLeave={handleParticleLeave}
+          />
+          <Particle
+            type="neutron"
+            position={{
+              top: '70%',
+              left: '30%',
+              transform: 'translate(-50%, -50%)'
+            }}
+            onClick={() => handleParticleClick('neutron')}
+            onMouseEnter={handleParticleHover}
+            onMouseLeave={handleParticleLeave}
+          />
+
+          {/* Electrons */}
+          <div className={`absolute inset-0 ${isRotating ? 'animate-spin' : ''}`} style={{ animationDuration: '10s' }}>
+            <Particle
+              type="electron"
+              position={{
+                top: '10%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+              onClick={() => handleParticleClick('electron')}
+              onMouseEnter={handleParticleHover}
+              onMouseLeave={handleParticleLeave}
+            />
+            <Particle
+              type="electron"
+              position={{
+                top: '50%',
+                left: '90%',
+                transform: 'translate(-50%, -50%)'
+              }}
+              onClick={() => handleParticleClick('electron')}
+              onMouseEnter={handleParticleHover}
+              onMouseLeave={handleParticleLeave}
+            />
+            <Particle
+              type="electron"
+              position={{
+                top: '90%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+              onClick={() => handleParticleClick('electron')}
+              onMouseEnter={handleParticleHover}
+              onMouseLeave={handleParticleLeave}
+            />
+            <Particle
+              type="electron"
+              position={{
+                top: '50%',
+                left: '10%',
+                transform: 'translate(-50%, -50%)'
+              }}
+              onClick={() => handleParticleClick('electron')}
+              onMouseEnter={handleParticleHover}
+              onMouseLeave={handleParticleLeave}
+            />
+          </div>
+        </div>
+
+        {/* Controls */}
+        <div className="flex justify-center space-x-4">
+          <button
+            onClick={() => setIsRotating(!isRotating)}
+            className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+          >
+            {isRotating ? <Pause className="w-4 h-4 mr-2" /> : <Play className="w-4 h-4 mr-2" />}
+            {isRotating ? 'Pause' : 'Play'}
+          </button>
+          <button
+            onClick={() => setIsRotating(true)}
+            className="flex items-center px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors font-medium"
+          >
+            <RotateCcw className="w-4 h-4 mr-2" />
+            Reset
+          </button>
+        </div>
+
+        {/* Instructions */}
+        <div className="mt-6 text-center">
+          <p className="text-gray-600 text-sm">
+            💡 Click on any particle to learn about its role in the atom!
+          </p>
+        </div>
       </div>
 
       {/* Info Modal */}
-      {showInfo && selectedParticle && (
+      {selectedParticle && (
         <InfoModal
           particle={selectedParticle}
-          onClose={() => setShowInfo(false)}
+          onClose={() => setSelectedParticle(null)}
         />
       )}
     </div>

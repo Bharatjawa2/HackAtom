@@ -1,0 +1,854 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "EN": {
+        "question": "What is the main component of nuclear fuel?",
+        "options": ["Uranium-235", "Carbon", "Iron", "Oxygen"],
+        "correct": 0,
+        "explanation": "Uranium-235 is the primary fissile isotope used in nuclear reactors.",
+        "category": "Nuclear Fuel"
+      },
+      "RU": {
+        "question": "Какой основной компонент ядерного топлива?",
+        "options": ["Уран-235", "Углерод", "Железо", "Кислород"],
+        "correct": 0,
+        "explanation": "Уран-235 является основным делящимся изотопом, используемым в ядерных реакторах.",
+        "category": "Ядерное топливо"
+      }
+    },
+    {
+      "id": 2,
+      "EN": {
+        "question": "Which particle has no electric charge?",
+        "options": ["Proton", "Neutron", "Electron", "Photon"],
+        "correct": 1,
+        "explanation": "Neutrons are electrically neutral particles found in the nucleus.",
+        "category": "Particle Physics"
+      },
+      "RU": {
+        "question": "Какая частица не имеет электрического заряда?",
+        "options": ["Протон", "Нейтрон", "Электрон", "Фотон"],
+        "correct": 1,
+        "explanation": "Нейтроны - это электрически нейтральные частицы, находящиеся в ядре.",
+        "category": "Физика частиц"
+      }
+    },
+    {
+      "id": 3,
+      "EN": {
+        "question": "What is nuclear fusion?",
+        "options": ["Splitting atoms", "Combining atoms", "Radioactive decay", "Chemical reaction"],
+        "correct": 1,
+        "explanation": "Nuclear fusion is the process of combining light atomic nuclei to form heavier ones.",
+        "category": "Nuclear Reactions"
+      },
+      "RU": {
+        "question": "Что такое ядерный синтез?",
+        "options": ["Деление атомов", "Объединение атомов", "Радиоактивный распад", "Химическая реакция"],
+        "correct": 1,
+        "explanation": "Ядерный синтез - это процесс объединения легких атомных ядер для образования более тяжелых.",
+        "category": "Ядерные реакции"
+      }
+    },
+    {
+      "id": 4,
+      "EN": {
+        "question": "Which element is most commonly used in nuclear power plants?",
+        "options": ["Plutonium", "Uranium", "Thorium", "Radium"],
+        "correct": 1,
+        "explanation": "Uranium is the most commonly used fuel in commercial nuclear power plants.",
+        "category": "Nuclear Power"
+      },
+      "RU": {
+        "question": "Какой элемент чаще всего используется на АЭС?",
+        "options": ["Плутоний", "Уран", "Торий", "Радий"],
+        "correct": 1,
+        "explanation": "Уран является наиболее часто используемым топливом в коммерческих атомных электростанциях.",
+        "category": "Ядерная энергетика"
+      }
+    },
+    {
+      "id": 5,
+      "EN": {
+        "question": "What is the main advantage of nuclear energy?",
+        "options": ["Low cost", "No greenhouse gases", "Abundant fuel", "All of the above"],
+        "correct": 3,
+        "explanation": "Nuclear energy offers multiple advantages including low emissions and abundant fuel.",
+        "category": "Nuclear Energy Benefits"
+      },
+      "RU": {
+        "question": "Какое главное преимущество ядерной энергии?",
+        "options": ["Низкая стоимость", "Нет парниковых газов", "Обилие топлива", "Все вышеперечисленное"],
+        "correct": 3,
+        "explanation": "Ядерная энергия предлагает множественные преимущества, включая низкие выбросы и обильное топливо.",
+        "category": "Преимущества ядерной энергии"
+      }
+    },
+    {
+      "id": 6,
+      "EN": {
+        "question": "What is a control rod in a nuclear reactor?",
+        "options": ["Fuel rod", "Neutron absorber", "Cooling system", "Turbine"],
+        "correct": 1,
+        "explanation": "Control rods absorb neutrons to regulate the nuclear chain reaction.",
+        "category": "Reactor Components"
+      },
+      "RU": {
+        "question": "Что такое управляющий стержень в ядерном реакторе?",
+        "options": ["Топливный стержень", "Поглотитель нейтронов", "Система охлаждения", "Турбина"],
+        "correct": 1,
+        "explanation": "Управляющие стержни поглощают нейтроны для регулирования ядерной цепной реакции.",
+        "category": "Компоненты реактора"
+      }
+    },
+    {
+      "id": 7,
+      "EN": {
+        "question": "What type of radiation is most penetrating?",
+        "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+        "correct": 2,
+        "explanation": "Gamma radiation has the highest penetrating power among common types of radiation.",
+        "category": "Radiation Types"
+      },
+      "RU": {
+        "question": "Какой тип радиации наиболее проникающий?",
+        "options": ["Альфа", "Бета", "Гамма", "Нейтронная"],
+        "correct": 2,
+        "explanation": "Гамма-излучение имеет самую высокую проникающую способность среди обычных типов радиации.",
+        "category": "Типы радиации"
+      }
+    },
+    {
+      "id": 8,
+      "EN": {
+        "question": "What is the half-life of a radioactive isotope?",
+        "options": ["Time to decay completely", "Time for half to decay", "Time to become stable", "Time to emit radiation"],
+        "correct": 1,
+        "explanation": "Half-life is the time required for half of the radioactive atoms to decay.",
+        "category": "Radioactivity"
+      },
+      "RU": {
+        "question": "Что такое период полураспада радиоактивного изотопа?",
+        "options": ["Время полного распада", "Время распада половины", "Время до стабилизации", "Время излучения"],
+        "correct": 1,
+        "explanation": "Период полураспада - это время, необходимое для распада половины радиоактивных атомов.",
+        "category": "Радиоактивность"
+      }
+    },
+    {
+      "id": 9,
+      "EN": {
+        "question": "Which nuclear medicine technique uses positrons?",
+        "options": ["X-ray", "PET scan", "CT scan", "MRI"],
+        "correct": 1,
+        "explanation": "PET (Positron Emission Tomography) scans use positron-emitting isotopes.",
+        "category": "Nuclear Medicine"
+      },
+      "RU": {
+        "question": "Какая ядерная медицина использует позитроны?",
+        "options": ["Рентген", "ПЭТ-сканирование", "КТ-сканирование", "МРТ"],
+        "correct": 1,
+        "explanation": "ПЭТ (позитронно-эмиссионная томография) использует позитрон-излучающие изотопы.",
+        "category": "Ядерная медицина"
+      }
+    },
+    {
+      "id": 10,
+      "EN": {
+        "question": "What is the primary coolant in most nuclear reactors?",
+        "options": ["Air", "Water", "Oil", "Gas"],
+        "correct": 1,
+        "explanation": "Water is the most common coolant used in nuclear reactors.",
+        "category": "Reactor Systems"
+      },
+      "RU": {
+        "question": "Какой основной теплоноситель в большинстве ядерных реакторов?",
+        "options": ["Воздух", "Вода", "Масло", "Газ"],
+        "correct": 1,
+        "explanation": "Вода является наиболее распространенным теплоносителем в ядерных реакторах.",
+        "category": "Системы реактора"
+      }
+    },
+    {
+      "id": 11,
+      "EN": {
+        "question": "What is the purpose of a containment building?",
+        "options": ["Generate electricity", "Store fuel", "Prevent radiation release", "Cool the reactor"],
+        "correct": 2,
+        "explanation": "Containment buildings are designed to prevent the release of radioactive materials.",
+        "category": "Nuclear Safety"
+      },
+      "RU": {
+        "question": "Какова цель защитной оболочки?",
+        "options": ["Генерировать электричество", "Хранить топливо", "Предотвращать выброс радиации", "Охлаждать реактор"],
+        "correct": 2,
+        "explanation": "Защитные оболочки предназначены для предотвращения выброса радиоактивных материалов.",
+        "category": "Ядерная безопасность"
+      }
+    },
+    {
+      "id": 12,
+      "EN": {
+        "question": "Which country has the most nuclear power plants?",
+        "options": ["Russia", "China", "United States", "France"],
+        "correct": 2,
+        "explanation": "The United States has the largest number of operating nuclear power plants.",
+        "category": "Nuclear Power"
+      },
+      "RU": {
+        "question": "В какой стране больше всего атомных электростанций?",
+        "options": ["Россия", "Китай", "США", "Франция"],
+        "correct": 2,
+        "explanation": "США имеет наибольшее количество действующих атомных электростанций.",
+        "category": "Ядерная энергетика"
+      }
+    },
+    {
+      "id": 13,
+      "EN": {
+        "question": "What is the atomic number of uranium?",
+        "options": ["92", "235", "238", "146"],
+        "correct": 0,
+        "explanation": "Uranium has an atomic number of 92, meaning it has 92 protons.",
+        "category": "Chemistry"
+      },
+      "RU": {
+        "question": "Какой атомный номер урана?",
+        "options": ["92", "235", "238", "146"],
+        "correct": 0,
+        "explanation": "Уран имеет атомный номер 92, что означает 92 протона.",
+        "category": "Химия"
+      }
+    },
+    {
+      "id": 14,
+      "EN": {
+        "question": "What type of nuclear reaction powers the Sun?",
+        "options": ["Fission", "Fusion", "Decay", "Burning"],
+        "correct": 1,
+        "explanation": "The Sun generates energy through nuclear fusion of hydrogen atoms.",
+        "category": "Nuclear Reactions"
+      },
+      "RU": {
+        "question": "Какой тип ядерной реакции питает Солнце?",
+        "options": ["Деление", "Синтез", "Распад", "Горение"],
+        "correct": 1,
+        "explanation": "Солнце генерирует энергию через ядерный синтез атомов водорода.",
+        "category": "Ядерные реакции"
+      }
+    },
+    {
+      "id": 15,
+      "EN": {
+        "question": "What is the main waste product of nuclear fission?",
+        "options": ["Carbon dioxide", "Spent fuel", "Steam", "Ash"],
+        "correct": 1,
+        "explanation": "Spent nuclear fuel is the primary waste product from nuclear fission.",
+        "category": "Nuclear Waste"
+      },
+      "RU": {
+        "question": "Какой основной отход ядерного деления?",
+        "options": ["Углекислый газ", "Отработанное топливо", "Пар", "Зола"],
+        "correct": 1,
+        "explanation": "Отработанное ядерное топливо является основным отходом ядерного деления.",
+        "category": "Ядерные отходы"
+      }
+    },
+    {
+      "id": 16,
+      "EN": {
+        "question": "What is the purpose of a moderator in a nuclear reactor?",
+        "options": ["Speed up neutrons", "Slow down neutrons", "Absorb neutrons", "Generate neutrons"],
+        "correct": 1,
+        "explanation": "A moderator slows down fast neutrons to thermal speeds for better fission.",
+        "category": "Reactor Physics"
+      },
+      "RU": {
+        "question": "Какова цель замедлителя в ядерном реакторе?",
+        "options": ["Ускорять нейтроны", "Замедлять нейтроны", "Поглощать нейтроны", "Генерировать нейтроны"],
+        "correct": 1,
+        "explanation": "Замедлитель замедляет быстрые нейтроны до тепловых скоростей для лучшего деления.",
+        "category": "Физика реактора"
+      }
+    },
+    {
+      "id": 17,
+      "EN": {
+        "question": "Which radiation type is stopped by paper?",
+        "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+        "correct": 0,
+        "explanation": "Alpha radiation can be stopped by a sheet of paper or even air.",
+        "category": "Radiation Protection"
+      },
+      "RU": {
+        "question": "Какой тип радиации останавливается бумагой?",
+        "options": ["Альфа", "Бета", "Гамма", "Нейтронная"],
+        "correct": 0,
+        "explanation": "Альфа-излучение может быть остановлено листом бумаги или даже воздухом.",
+        "category": "Защита от радиации"
+      }
+    },
+    {
+      "id": 18,
+      "EN": {
+        "question": "What is the critical mass?",
+        "options": ["Maximum safe mass", "Minimum mass for chain reaction", "Optimal fuel mass", "Waste mass"],
+        "correct": 1,
+        "explanation": "Critical mass is the minimum amount of fissile material needed for a sustained chain reaction.",
+        "category": "Nuclear Physics"
+      },
+      "RU": {
+        "question": "Что такое критическая масса?",
+        "options": ["Максимальная безопасная масса", "Минимальная масса для цепной реакции", "Оптимальная масса топлива", "Масса отходов"],
+        "correct": 1,
+        "explanation": "Критическая масса - это минимальное количество делящегося материала, необходимое для самоподдерживающейся цепной реакции.",
+        "category": "Ядерная физика"
+      }
+    },
+    {
+      "id": 19,
+      "EN": {
+        "question": "What is the main use of nuclear medicine?",
+        "options": ["Generate electricity", "Diagnose diseases", "Produce weapons", "Heat homes"],
+        "correct": 1,
+        "explanation": "Nuclear medicine is primarily used for medical diagnosis and treatment.",
+        "category": "Nuclear Medicine"
+      },
+      "RU": {
+        "question": "Каково основное применение ядерной медицины?",
+        "options": ["Генерировать электричество", "Диагностировать болезни", "Производить оружие", "Отапливать дома"],
+        "correct": 1,
+        "explanation": "Ядерная медицина в основном используется для медицинской диагностики и лечения.",
+        "category": "Ядерная медицина"
+      }
+    },
+    {
+      "id": 20,
+      "EN": {
+        "question": "What is the primary fuel for fusion reactors?",
+        "options": ["Uranium", "Plutonium", "Hydrogen", "Thorium"],
+        "correct": 2,
+        "explanation": "Hydrogen isotopes (deuterium and tritium) are the primary fuels for fusion.",
+        "category": "Fusion Energy"
+      },
+      "RU": {
+        "question": "Какое основное топливо для термоядерных реакторов?",
+        "options": ["Уран", "Плутоний", "Водород", "Торий"],
+        "correct": 2,
+        "explanation": "Изотопы водорода (дейтерий и тритий) являются основным топливом для синтеза.",
+        "category": "Термоядерная энергия"
+      }
+    },
+    {
+      "id": 21,
+      "EN": {
+        "question": "What is the purpose of a scram system?",
+        "options": ["Start the reactor", "Emergency shutdown", "Cool the fuel", "Generate power"],
+        "correct": 1,
+        "explanation": "A scram system is an emergency shutdown system for nuclear reactors.",
+        "category": "Nuclear Safety"
+      },
+      "RU": {
+        "question": "Какова цель системы аварийной остановки?",
+        "options": ["Запустить реактор", "Аварийная остановка", "Охладить топливо", "Генерировать мощность"],
+        "correct": 1,
+        "explanation": "Система аварийной остановки - это система экстренного останова ядерных реакторов.",
+        "category": "Ядерная безопасность"
+      }
+    },
+    {
+      "id": 22,
+      "EN": {
+        "question": "Which particle determines the element's identity?",
+        "options": ["Neutron", "Proton", "Electron", "Photon"],
+        "correct": 1,
+        "explanation": "The number of protons determines the atomic number and thus the element's identity.",
+        "category": "Atomic Structure"
+      },
+      "RU": {
+        "question": "Какая частица определяет идентичность элемента?",
+        "options": ["Нейтрон", "Протон", "Электрон", "Фотон"],
+        "correct": 1,
+        "explanation": "Количество протонов определяет атомный номер и, следовательно, идентичность элемента.",
+        "category": "Атомная структура"
+      }
+    },
+    {
+      "id": 23,
+      "EN": {
+        "question": "What is the main advantage of nuclear fusion over fission?",
+        "options": ["Lower cost", "Less waste", "More fuel", "All of the above"],
+        "correct": 3,
+        "explanation": "Fusion offers multiple advantages including abundant fuel and less radioactive waste.",
+        "category": "Fusion vs Fission"
+      },
+      "RU": {
+        "question": "Какое главное преимущество ядерного синтеза перед делением?",
+        "options": ["Нижняя стоимость", "Меньше отходов", "Больше топлива", "Все вышеперечисленное"],
+        "correct": 3,
+        "explanation": "Синтез предлагает множественные преимущества, включая обильное топливо и меньше радиоактивных отходов.",
+        "category": "Синтез против деления"
+      }
+    },
+    {
+      "id": 24,
+      "EN": {
+        "question": "What is the primary cooling method in nuclear reactors?",
+        "options": ["Air cooling", "Water cooling", "Oil cooling", "Gas cooling"],
+        "correct": 1,
+        "explanation": "Water is the primary coolant used in most nuclear reactors.",
+        "category": "Reactor Cooling"
+      },
+      "RU": {
+        "question": "Какой основной метод охлаждения в ядерных реакторах?",
+        "options": ["Воздушное охлаждение", "Водяное охлаждение", "Масляное охлаждение", "Газовое охлаждение"],
+        "correct": 1,
+        "explanation": "Вода является основным теплоносителем в большинстве ядерных реакторов.",
+        "category": "Охлаждение реактора"
+      }
+    },
+    {
+      "id": 25,
+      "EN": {
+        "question": "What is the purpose of a neutron reflector?",
+        "options": ["Absorb neutrons", "Reflect neutrons back", "Generate neutrons", "Stop neutrons"],
+        "correct": 1,
+        "explanation": "A neutron reflector bounces neutrons back into the reactor core to improve efficiency.",
+        "category": "Reactor Design"
+      },
+      "RU": {
+        "question": "Какова цель нейтронного отражателя?",
+        "options": ["Поглощать нейтроны", "Отражать нейтроны обратно", "Генерировать нейтроны", "Останавливать нейтроны"],
+        "correct": 1,
+        "explanation": "Нейтронный отражатель отбрасывает нейтроны обратно в активную зону реактора для повышения эффективности.",
+        "category": "Конструкция реактора"
+      }
+    },
+    {
+      "id": 26,
+      "EN": {
+        "question": "Which radiation type requires lead shielding?",
+        "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+        "correct": 2,
+        "explanation": "Gamma radiation requires dense materials like lead for effective shielding.",
+        "category": "Radiation Protection"
+      },
+      "RU": {
+        "question": "Какой тип радиации требует свинцовую защиту?",
+        "options": ["Альфа", "Бета", "Гамма", "Нейтронная"],
+        "correct": 2,
+        "explanation": "Гамма-излучение требует плотных материалов, таких как свинец, для эффективной защиты.",
+        "category": "Защита от радиации"
+      }
+    },
+    {
+      "id": 27,
+      "EN": {
+        "question": "What is the main component of nuclear waste?",
+        "options": ["Spent fuel", "Cooling water", "Control rods", "Steam"],
+        "correct": 0,
+        "explanation": "Spent nuclear fuel is the primary component of nuclear waste.",
+        "category": "Nuclear Waste"
+      },
+      "RU": {
+        "question": "Какой основной компонент ядерных отходов?",
+        "options": ["Отработанное топливо", "Охлаждающая вода", "Управляющие стержни", "Пар"],
+        "correct": 0,
+        "explanation": "Отработанное ядерное топливо является основным компонентом ядерных отходов.",
+        "category": "Ядерные отходы"
+      }
+    },
+    {
+      "id": 28,
+      "EN": {
+        "question": "What is the purpose of a nuclear power plant's condenser?",
+        "options": ["Generate steam", "Cool steam back to water", "Generate electricity", "Store energy"],
+        "correct": 1,
+        "explanation": "The condenser cools steam back to water for reuse in the cycle.",
+        "category": "Power Plant Systems"
+      },
+      "RU": {
+        "question": "Какова цель конденсатора атомной электростанции?",
+        "options": ["Генерировать пар", "Охлаждать пар обратно в воду", "Генерировать электричество", "Хранить энергию"],
+        "correct": 1,
+        "explanation": "Конденсатор охлаждает пар обратно в воду для повторного использования в цикле.",
+        "category": "Системы электростанции"
+      }
+    },
+    {
+      "id": 29,
+      "EN": {
+        "question": "Which isotope is used in nuclear medicine for imaging?",
+        "options": ["Uranium-235", "Technetium-99m", "Plutonium-239", "Thorium-232"],
+        "correct": 1,
+        "explanation": "Technetium-99m is widely used in nuclear medicine for diagnostic imaging.",
+        "category": "Nuclear Medicine"
+      },
+      "RU": {
+        "question": "Какой изотоп используется в ядерной медицине для визуализации?",
+        "options": ["Уран-235", "Технеций-99m", "Плутоний-239", "Торий-232"],
+        "correct": 1,
+        "explanation": "Технеций-99m широко используется в ядерной медицине для диагностической визуализации.",
+        "category": "Ядерная медицина"
+      }
+    },
+    {
+      "id": 30,
+      "EN": {
+        "question": "What is the primary energy conversion in a nuclear power plant?",
+        "options": ["Nuclear to electrical", "Nuclear to thermal to electrical", "Nuclear to mechanical", "Nuclear to chemical"],
+        "correct": 1,
+        "explanation": "Nuclear energy is first converted to thermal energy, then to electrical energy.",
+        "category": "Energy Conversion"
+      },
+      "RU": {
+        "question": "Какое основное преобразование энергии на атомной электростанции?",
+        "options": ["Ядерная в электрическую", "Ядерная в тепловую в электрическую", "Ядерная в механическую", "Ядерная в химическую"],
+        "correct": 1,
+        "explanation": "Ядерная энергия сначала преобразуется в тепловую, затем в электрическую.",
+        "category": "Преобразование энергии"
+      }
+    },
+    {
+      "id": 31,
+      "EN": {
+        "question": "What is the purpose of a fuel assembly?",
+        "options": ["Generate electricity", "Organize fuel rods", "Cool the reactor", "Store waste"],
+        "correct": 1,
+        "explanation": "Fuel assemblies organize fuel rods in a structured array for optimal neutron interaction.",
+        "category": "Reactor Design"
+      },
+      "RU": {
+        "question": "Какова цель тепловыделяющей сборки?",
+        "options": ["Генерировать электричество", "Организовать топливные стержни", "Охлаждать реактор", "Хранить отходы"],
+        "correct": 1,
+        "explanation": "Тепловыделяющие сборки организуют топливные стержни в структурированном массиве для оптимального взаимодействия нейтронов.",
+        "category": "Конструкция реактора"
+      }
+    },
+    {
+      "id": 32,
+      "EN": {
+        "question": "Which radiation type is most dangerous if ingested?",
+        "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+        "correct": 0,
+        "explanation": "Alpha radiation is most dangerous when ingested because it causes intense local damage.",
+        "category": "Radiation Effects"
+      },
+      "RU": {
+        "question": "Какой тип радиации наиболее опасен при проглатывании?",
+        "options": ["Альфа", "Бета", "Гамма", "Нейтронная"],
+        "correct": 0,
+        "explanation": "Альфа-излучение наиболее опасно при проглатывании, поскольку вызывает интенсивное локальное повреждение.",
+        "category": "Воздействие радиации"
+      }
+    },
+    {
+      "id": 33,
+      "EN": {
+        "question": "What is the primary safety feature of modern reactors?",
+        "options": ["Active cooling", "Passive safety systems", "Manual control", "Automatic shutdown"],
+        "correct": 1,
+        "explanation": "Modern reactors use passive safety systems that work without external power.",
+        "category": "Nuclear Safety"
+      },
+      "RU": {
+        "question": "Какова основная функция безопасности современных реакторов?",
+        "options": ["Активное охлаждение", "Пассивные системы безопасности", "Ручное управление", "Автоматическая остановка"],
+        "correct": 1,
+        "explanation": "Современные реакторы используют пассивные системы безопасности, которые работают без внешнего питания.",
+        "category": "Ядерная безопасность"
+      }
+    },
+    {
+      "id": 34,
+      "EN": {
+        "question": "What is the main use of nuclear power in space?",
+        "options": ["Generate electricity", "Propulsion", "Life support", "All of the above"],
+        "correct": 3,
+        "explanation": "Nuclear power in space is used for electricity generation, propulsion, and life support.",
+        "category": "Space Applications"
+      },
+      "RU": {
+        "question": "Каково основное применение ядерной энергии в космосе?",
+        "options": ["Генерировать электричество", "Движение", "Поддержание жизни", "Все вышеперечисленное"],
+        "correct": 3,
+        "explanation": "Ядерная энергия в космосе используется для генерации электричества, движения и поддержания жизни.",
+        "category": "Космические применения"
+      }
+    },
+    {
+      "id": 35,
+      "EN": {
+        "question": "Which particle is responsible for chemical bonding?",
+        "options": ["Proton", "Neutron", "Electron", "Photon"],
+        "correct": 2,
+        "explanation": "Electrons are responsible for chemical bonding between atoms.",
+        "category": "Chemistry"
+      },
+      "RU": {
+        "question": "Какая частица отвечает за химическую связь?",
+        "options": ["Протон", "Нейтрон", "Электрон", "Фотон"],
+        "correct": 2,
+        "explanation": "Электроны отвечают за химическую связь между атомами.",
+        "category": "Химия"
+      }
+    },
+    {
+      "id": 36,
+      "EN": {
+        "question": "What is the primary advantage of nuclear submarines?",
+        "options": ["Speed", "Long endurance", "Stealth", "Cost"],
+        "correct": 1,
+        "explanation": "Nuclear submarines can operate for months without refueling due to their nuclear power.",
+        "category": "Military Applications"
+      },
+      "RU": {
+        "question": "Какое основное преимущество атомных подводных лодок?",
+        "options": ["Скорость", "Длительная выносливость", "Скрытность", "Стоимость"],
+        "correct": 1,
+        "explanation": "Атомные подводные лодки могут работать месяцами без дозаправки благодаря ядерной энергии.",
+        "category": "Военные применения"
+      }
+    },
+    {
+      "id": 37,
+      "EN": {
+        "question": "What is the purpose of a neutron detector?",
+        "options": ["Generate neutrons", "Absorb neutrons", "Detect neutron flux", "Cool neutrons"],
+        "correct": 2,
+        "explanation": "Neutron detectors measure the neutron flux in nuclear reactors.",
+        "category": "Reactor Instrumentation"
+      },
+      "RU": {
+        "question": "Какова цель нейтронного детектора?",
+        "options": ["Генерировать нейтроны", "Поглощать нейтроны", "Обнаруживать поток нейтронов", "Охлаждать нейтроны"],
+        "correct": 2,
+        "explanation": "Нейтронные детекторы измеряют поток нейтронов в ядерных реакторах.",
+        "category": "Приборы реактора"
+      }
+    },
+    {
+      "id": 38,
+      "EN": {
+        "question": "Which radiation type is used in cancer treatment?",
+        "options": ["Alpha", "Beta", "Gamma", "All of the above"],
+        "correct": 3,
+        "explanation": "All types of radiation can be used in cancer treatment depending on the application.",
+        "category": "Medical Applications"
+      },
+      "RU": {
+        "question": "Какой тип радиации используется в лечении рака?",
+        "options": ["Альфа", "Бета", "Гамма", "Все вышеперечисленное"],
+        "correct": 3,
+        "explanation": "Все типы радиации могут использоваться в лечении рака в зависимости от применения.",
+        "category": "Медицинские применения"
+      }
+    },
+    {
+      "id": 39,
+      "EN": {
+        "question": "What is the primary fuel for nuclear fusion on Earth?",
+        "options": ["Uranium", "Hydrogen", "Helium", "Carbon"],
+        "correct": 1,
+        "explanation": "Hydrogen isotopes (deuterium and tritium) are the primary fuels for fusion on Earth.",
+        "category": "Fusion Energy"
+      },
+      "RU": {
+        "question": "Какое основное топливо для ядерного синтеза на Земле?",
+        "options": ["Уран", "Водород", "Гелий", "Углерод"],
+        "correct": 1,
+        "explanation": "Изотопы водорода (дейтерий и тритий) являются основным топливом для синтеза на Земле.",
+        "category": "Термоядерная энергия"
+      }
+    },
+    {
+      "id": 40,
+      "EN": {
+        "question": "What is the purpose of a nuclear power plant's turbine?",
+        "options": ["Generate neutrons", "Convert thermal to mechanical energy", "Cool the reactor", "Store energy"],
+        "correct": 1,
+        "explanation": "The turbine converts thermal energy from steam into mechanical energy.",
+        "category": "Power Generation"
+      },
+      "RU": {
+        "question": "Какова цель турбины атомной электростанции?",
+        "options": ["Генерировать нейтроны", "Преобразовывать тепловую в механическую энергию", "Охлаждать реактор", "Хранить энергию"],
+        "correct": 1,
+        "explanation": "Турбина преобразует тепловую энергию пара в механическую энергию.",
+        "category": "Генерация энергии"
+      }
+    },
+    {
+      "id": 41,
+      "EN": {
+        "question": "Which radiation type has the highest energy?",
+        "options": ["Alpha", "Beta", "Gamma", "X-ray"],
+        "correct": 2,
+        "explanation": "Gamma radiation typically has the highest energy among common radiation types.",
+        "category": "Radiation Physics"
+      },
+      "RU": {
+        "question": "Какой тип радиации имеет самую высокую энергию?",
+        "options": ["Альфа", "Бета", "Гамма", "Рентгеновское"],
+        "correct": 2,
+        "explanation": "Гамма-излучение обычно имеет самую высокую энергию среди обычных типов радиации.",
+        "category": "Физика радиации"
+      }
+    },
+    {
+      "id": 42,
+      "EN": {
+        "question": "What is the primary purpose of nuclear power plants?",
+        "options": ["Generate electricity", "Produce weapons", "Research", "Heating"],
+        "correct": 0,
+        "explanation": "Nuclear power plants are primarily designed to generate electricity.",
+        "category": "Nuclear Power"
+      },
+      "RU": {
+        "question": "Какова основная цель атомных электростанций?",
+        "options": ["Генерировать электричество", "Производить оружие", "Исследования", "Отопление"],
+        "correct": 0,
+        "explanation": "Атомные электростанции в основном предназначены для генерации электричества.",
+        "category": "Ядерная энергетика"
+      }
+    },
+    {
+      "id": 43,
+      "EN": {
+        "question": "What is the purpose of a nuclear reactor's core?",
+        "options": ["Store fuel", "Contain the chain reaction", "Generate electricity", "Cool the system"],
+        "correct": 1,
+        "explanation": "The reactor core contains and controls the nuclear chain reaction.",
+        "category": "Reactor Design"
+      },
+      "RU": {
+        "question": "Какова цель активной зоны ядерного реактора?",
+        "options": ["Хранить топливо", "Сдерживать цепную реакцию", "Генерировать электричество", "Охлаждать систему"],
+        "correct": 1,
+        "explanation": "Активная зона реактора содержит и контролирует ядерную цепную реакцию.",
+        "category": "Конструкция реактора"
+      }
+    },
+    {
+      "id": 44,
+      "EN": {
+        "question": "Which particle has the smallest mass?",
+        "options": ["Proton", "Neutron", "Electron", "Neutrino"],
+        "correct": 3,
+        "explanation": "Neutrinos have the smallest mass among these particles.",
+        "category": "Particle Physics"
+      },
+      "RU": {
+        "question": "Какая частица имеет самую маленькую массу?",
+        "options": ["Протон", "Нейтрон", "Электрон", "Нейтрино"],
+        "correct": 3,
+        "explanation": "Нейтрино имеют самую маленькую массу среди этих частиц.",
+        "category": "Физика частиц"
+      }
+    },
+    {
+      "id": 45,
+      "EN": {
+        "question": "What is the primary advantage of nuclear energy over fossil fuels?",
+        "options": ["Lower cost", "No emissions", "More fuel", "All of the above"],
+        "correct": 3,
+        "explanation": "Nuclear energy offers multiple advantages including low emissions and abundant fuel.",
+        "category": "Energy Comparison"
+      },
+      "RU": {
+        "question": "Какое основное преимущество ядерной энергии перед ископаемым топливом?",
+        "options": ["Нижняя стоимость", "Нет выбросов", "Больше топлива", "Все вышеперечисленное"],
+        "correct": 3,
+        "explanation": "Ядерная энергия предлагает множественные преимущества, включая низкие выбросы и обильное топливо.",
+        "category": "Сравнение энергии"
+      }
+    },
+    {
+      "id": 46,
+      "EN": {
+        "question": "What is the purpose of a nuclear power plant's condenser?",
+        "options": ["Generate steam", "Cool steam back to water", "Generate electricity", "Store energy"],
+        "correct": 1,
+        "explanation": "The condenser cools steam back to water for reuse in the cycle.",
+        "category": "Power Plant Systems"
+      },
+      "RU": {
+        "question": "Какова цель конденсатора атомной электростанции?",
+        "options": ["Генерировать пар", "Охлаждать пар обратно в воду", "Генерировать электричество", "Хранить энергию"],
+        "correct": 1,
+        "explanation": "Конденсатор охлаждает пар обратно в воду для повторного использования в цикле.",
+        "category": "Системы электростанции"
+      }
+    },
+    {
+      "id": 47,
+      "EN": {
+        "question": "Which radiation type is most easily shielded?",
+        "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+        "correct": 0,
+        "explanation": "Alpha radiation is the easiest to shield, requiring only paper or air.",
+        "category": "Radiation Protection"
+      },
+      "RU": {
+        "question": "Какой тип радиации легче всего экранировать?",
+        "options": ["Альфа", "Бета", "Гамма", "Нейтронная"],
+        "correct": 0,
+        "explanation": "Альфа-излучение легче всего экранировать, требуя только бумагу или воздух.",
+        "category": "Защита от радиации"
+      }
+    },
+    {
+      "id": 48,
+      "EN": {
+        "question": "What is the primary use of nuclear power in medicine?",
+        "options": ["Generate electricity", "Diagnostic imaging", "Heating", "Lighting"],
+        "correct": 1,
+        "explanation": "Nuclear power in medicine is primarily used for diagnostic imaging.",
+        "category": "Nuclear Medicine"
+      },
+      "RU": {
+        "question": "Каково основное применение ядерной энергии в медицине?",
+        "options": ["Генерировать электричество", "Диагностическая визуализация", "Отопление", "Освещение"],
+        "correct": 1,
+        "explanation": "Ядерная энергия в медицине в основном используется для диагностической визуализации.",
+        "category": "Ядерная медицина"
+      }
+    },
+    {
+      "id": 49,
+      "EN": {
+        "question": "What is the purpose of a nuclear reactor's emergency core cooling system?",
+        "options": ["Generate power", "Emergency cooling", "Store fuel", "Generate steam"],
+        "correct": 1,
+        "explanation": "The emergency core cooling system provides cooling during emergency situations.",
+        "category": "Nuclear Safety"
+      },
+      "RU": {
+        "question": "Какова цель системы аварийного охлаждения активной зоны реактора?",
+        "options": ["Генерировать мощность", "Аварийное охлаждение", "Хранить топливо", "Генерировать пар"],
+        "correct": 1,
+        "explanation": "Система аварийного охлаждения активной зоны обеспечивает охлаждение в аварийных ситуациях.",
+        "category": "Ядерная безопасность"
+      }
+    },
+    {
+      "id": 50,
+      "EN": {
+        "question": "Which particle is responsible for the strong nuclear force?",
+        "options": ["Proton", "Neutron", "Gluon", "Electron"],
+        "correct": 2,
+        "explanation": "Gluons are the force carriers for the strong nuclear force that holds nuclei together.",
+        "category": "Nuclear Forces"
+      },
+      "RU": {
+        "question": "Какая частица отвечает за сильное ядерное взаимодействие?",
+        "options": ["Протон", "Нейтрон", "Глюон", "Электрон"],
+        "correct": 2,
+        "explanation": "Глюоны являются переносчиками силы для сильного ядерного взаимодействия, которое удерживает ядра вместе.",
+        "category": "Ядерные силы"
+      }
+    }
+  ]
+}
